@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page Penjualan Perumahan Klaster</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="container">
+        <h1>Klaster Asri Residence</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#houses">Tipe Rumah</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Rumah Idaman Anda di Klaster Asri Residence</h2>
+        <p>Temukan rumah impian Anda dengan lingkungan yang aman dan nyaman.</p>
+        <a href="#contact" class="btn">Hubungi Kami</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>Tentang Klaster Asri Residence</h2>
+        <p>Klaster Asri Residence menawarkan hunian modern dengan fasilitas lengkap, berlokasi strategis di jantung kota. Dengan desain yang elegan dan lingkungan yang asri, kami menyediakan tempat tinggal yang nyaman untuk keluarga Anda.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+    <div class="container">
+        <h2>Fitur Unggulan</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Lokasi Strategis</h3>
+                <p>Dekat dengan pusat perbelanjaan, sekolah, dan fasilitas kesehatan.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Fasilitas Lengkap</h3>
+                <p>Kolam renang, taman bermain, dan jogging track untuk kenyamanan Anda.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Keamanan 24 Jam</h3>
+                <p>Petugas keamanan dan CCTV siap menjaga lingkungan Anda selama 24 jam.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- House Types Section -->
+<section id="houses" class="houses">
+    <div class="container">
+        <h2>Tipe Rumah</h2>
+        <div class="house-list">
+            <div class="house-item">
+                <img src="img/rumah1.jpg" alt="Tipe A">
+                <h3>Tipe A - 36/72</h3>
+                <p>Rumah minimalis 2 kamar tidur, 1 kamar mandi, dan carport.</p>
+            </div>
+            <div class="house-item">
+                <img src="img/rumah2.jpg" alt="Tipe B">
+                <h3>Tipe B - 45/90</h3>
+                <p>Rumah keluarga 3 kamar tidur, 2 kamar mandi, dan halaman luas.</p>
+            </div>
+            <div class="house-item">
+                <img src="img/rumah3.jpg" alt="Tipe C">
+                <h3>Tipe C - 60/120</h3>
+                <p>Rumah eksklusif dengan 4 kamar tidur, 3 kamar mandi, dan garasi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Hubungi Kami</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Nama Anda" required>
+            <input type="email" id="email" placeholder="Email Anda" required>
+            <textarea id="message" placeholder="Pesan Anda" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Klaster Asri Residence. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+// Mengambil form dan menambahkan event listener
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    
+    if (name && email && message) {
+        alert(`Terima kasih ${name}, pesan Anda sudah terkirim!`);
+        // Reset form
+        document.getElementById("contact-form").reset();
+    } else {
+        alert("Harap lengkapi semua data!");
+    }
+})

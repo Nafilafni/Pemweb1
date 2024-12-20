@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body style="font-family: cursive; padding: 25px;">
+    <div style="display: flex; justify-content: space-around; border: 2px solid black; padding: 5px;">
+        <a href=""style="color :black; text-decoration: none ">Home</a>|
+        <a href=""style="color :black; text-decoration: none ">Generet Link</a>|
+        <a href=""style="color :black; text-decoration: none ">Transaction history</a>|
+        <a href=""style="color :black; text-decoration: none ">Policy</a>|
+        <a href=""style="color :black; text-decoration: none ">Log out</a>
+    </div>
+    <form action="" method="post" style="margin-top: 30px;">
+        <table >
+            <tr>
+                <td style="width: 300px; vertical-align: top;" rowspan="20">
+                    <img src="mackbook.jpg" alt="barang" style="width: 250px;height: auto; border: 1px solid black;">
+                </td> 
+            </tr>
+            <tr>
+                <td style="vertical-align: text-top;">
+                    <label for="Title here">Title Here :</label> 
+                </td>
+                <td style="vertical-align: text-top;">
+                    <span type="text" name="title" id="title">
+                </td>
+                </tr>
+                <tr>              
+                    <td style="vertical-align: text-top;">
+                        <label for="Description">Description :</label>
+                    </td>
+                    <td style="vertical-align:top;">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Total amount">Total amount :</label>
+                    </td>
+                    <td style="vertical-align: text-top;">
+                        <span type="text" name="Account_number" id="Account_number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Payment type">Payment type :</label> 
+                    </td>
+                    <td>
+                        <select name="Payment_type" id="Payment_type">
+                        <option value="Visa_Debit">Visa Debit</option>
+                        <option value="shoppepay">shoppepay</option>
+                        <option value="credit">credit</option>
+                        <option value="gopay">gopay</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Accountt Holder">Accountt Holder :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Account_Holder" id="Account_Holder">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Account No">Account No :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Account_No" id="Account_No" value="123-456-789-0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="send_to_mobile_phone" id="send_to_phone_mobile" style="accent-color: green"checked>
+                        <label style="color: green;" for="send_to_mobile_phone">send to phone mobile</label>
+                    </td>
+                    <tr>
+                    <td>
+                        <input type="checkbox" name="email_me_copy_of_transaction" id="email_me_copy_of_transaction" style="accent-color: green" checked> 
+                        <label style="color: green;"for="email_me_copy_of_transaction">email me copy of transaction</label>
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="send to mobile phone">send to mobile phone :</label> 
+                    </td>
+                    <td>
+                        <input type="text" name="send_to_mobile_phone" value="1234567890">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="send to email">send to email</label> 
+                    </td>
+                    <td>
+                        <input type="text" name="send_to_email" id="send_to_email" value="nnfila@pilah.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" style="background-color: green; color: white; margin: 20px;">Generet Nabr Link </button>
+                    </td>
+                </tr>
+    </table>
+        </form>
+    </div>
+</body>
+</html>
+    
+

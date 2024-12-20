@@ -1,0 +1,45 @@
+.atas {
+    display: flex;
+    gap: 20px;
+}
+.satu {
+    width: 16%;
+    height: 70px;
+    background-color: mediumorchid;
+    border: 1px solid black;
+}
+.dua {
+    width: 90%;
+    background-color: mediumpurple;
+    border: 1px solid black;
+}
+.tengah {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.tiga {
+    width: 15%;
+    height: 620px;
+    background-color: plum;
+    border: 1px solid black;
+}
+.empat {
+    width: 67%;
+    height: 620px;
+    background-color: burlywood;
+    border: 1px solid black;
+}
+.lima {
+    width: 15%;
+    height: 620px;
+    background-color: lightskyblue;
+    border: 1px solid black;
+}
+.bawah_enam {
+    width: 100%;
+    height: 70px;
+    background-color: magenta;
+    border: 1px solid black;
+    margin-top: 20px;
+}

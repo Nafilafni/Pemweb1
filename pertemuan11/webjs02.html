@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let mhs = {
+            nama : "Ahmad Fauzi",
+            umur : 18,
+            prodi : {
+                kode: "TI",
+                nama: "Teknik Informatika"
+            }
+        }
+        function cetak(){
+            let area_nf = document.getElementById("nf");
+            area_nf.innerHTML = "Nama Mahasiswa : "+ mhs.nama;
+            area_nf.innerHTML = area_nf.innerHTML + "<br>usia :" + mhs.umur;
+            area_nf.innerHTML = area_nf.innerHTML + "<br> prodi :" + mhs.prodi.nama;
+            area_nf.innerHTML = area_nf.innerHTML + "<br>IPK :" + mhs.IPK +
+               "<br> status : " + mhs.grade()
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+.satu {
+    width: 100%;
+    height: 110px;
+    background-color: midnightblue;
+    border: 1px solid black;
+}
+
+.dua {
+    display: flex;
+    gap: 85px;
+    margin-top: 60px;
+   
+}
+.tiga {
+    width: 15%;
+    height: 35ch;
+    background-color: mediumslateblue;
+    border: 2px solid black;
+}
+.empat {
+    width: 80%;
+    height: 35ch;
+    background-color: lightslategray;
+    border: 2px solid black;
+}
+.lima {
+    display: flex;
+    gap: 85px;
+    margin-top: 60px;
+}
+.enam {
+    width: 15%;
+    height: 25ch;
+    background-color: mediumslateblue;
+    border: 2px solid black;
+}
+.tujuh {
+    width: 80%;
+    height: 25ch;
+    background-color: lightgrey;
+    border: 2px solid black;
+}

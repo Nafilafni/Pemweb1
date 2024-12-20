@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function otentikasi(){
+            const admin = "ahmad2017";
+            const passadmin = "integrity";
+
+            let uname = document.getElementById("username").value;
+            let pass = document.getElementById("pass").value;
+
+            if(uname == admin && pass == passadmin){
+                alert("Sukses login");
+            }else{
+                alert("Gagal login");
+                //windown.location.href= "login.html",false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post" action="../project1/project1.html">
+        username : <input type="text" name="username">
+        <br>
+        password: <input type="password" name="password">
+        <br>
+       <input type="submit" value="login" onclick="otentikasi()">
+    </form>
+</body>
+</html>
